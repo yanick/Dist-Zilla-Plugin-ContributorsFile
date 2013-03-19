@@ -120,3 +120,23 @@ module, the file will not be created.
 
 The name of the contributor file that is created. Defaults to I<CONTRIBUTORS>.
 
+=head1 TRICKS
+
+Refer to David Golden's blog entry at 
+L<http://www.dagolden.com/index.php/1921/how-im-using-distzilla-to-give-credit-to-contributors/>
+to get introduced to the C<Dist::Zilla> contributor modules.
+
+Git's C<.mailmap> file is useful to deal with contributors with several email
+addresses:
+L<https://www.kernel.org/pub/software/scm/git/docs/git-shortlog.html>.
+
+To give credit to bug reporters and other persons who don't commit code
+directly, you can use empty git commits:
+
+    git commit --allow-empty --author="David Golden <dagolden@cpan.org>" -m "..."
+
+=head1 SEE ALSO
+
+L<Dist::Zilla::Plugin::ContributorsFromGit>
+
+L<http://p3rl.org/Pod::Weaver::Section::Contributors>
