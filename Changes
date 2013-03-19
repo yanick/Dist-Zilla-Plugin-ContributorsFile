@@ -1,5 +1,8 @@
 Revision history for Dist-Zilla-Plugin-ContributorsFile
 
-{{$NEXT}}
+0.1.0 2013-03-18
+ - First version, unleashed on an unsuspecting world.
 
-  - First version, unleashed on an unsuspecting world.
+ [STATISTICS]
+ - code churn: 4 files changed, 152 insertions(+), 7 deletions(-)
+

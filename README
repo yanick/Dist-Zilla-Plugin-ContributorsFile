@@ -1,0 +1,70 @@
+NAME
+    Dist::Zilla::Plugin::ContributorsFile - add a file listing all
+    contributors
+
+VERSION
+    version 0.1.0
+
+SYNOPSIS
+    In dist.ini:
+
+        [ContributorsFromGit]
+
+        [ContributorsFile]
+        filename = CONTRIBUTORS
+
+DESCRIPTION
+    "Dist::Zilla::Plugin::ContributorsFile" populates a *CONTRIBUTORS* file
+    with all the contributors of the project as found by
+    "Dist::Zilla::Plugin::ContributorsFromGit" (which also need to be
+    present in your "dist.ini").
+
+    The generated file will look like this:
+
+        # FOO-BAR CONTRIBUTORS #
+
+        This is the (likely incomplete) list of people who have helped
+        make this distribution what it is, either via code contributions, 
+        patches, bug reports, help with troubleshooting, etc. A huge
+        thank to all of them.
+
+            * Albert Zoot <zoo@foo.com>
+            * Bertrand Maxwell <maxwell@bar.com>
+
+    Note that if no contributor is detected beside the actual author of the
+    module, the file will not be created.
+
+CONFIGURATION OPTIONS
+  filename
+    The name of the contributor file that is created. Defaults to
+    *CONTRIBUTORS*.
+
+TRICKS
+    Refer to David Golden's blog entry at
+    <http://www.dagolden.com/index.php/1921/how-im-using-distzilla-to-give-c
+    redit-to-contributors/> to get introduced to the "Dist::Zilla"
+    contributor modules.
+
+    Git's ".mailmap" file is useful to deal with contributors with several
+    email addresses:
+    <https://www.kernel.org/pub/software/scm/git/docs/git-shortlog.html>.
+
+    To give credit to bug reporters and other persons who don't commit code
+    directly, you can use empty git commits:
+
+        git commit --allow-empty --author="David Golden <dagolden@cpan.org>" -m "..."
+
+SEE ALSO
+    Dist::Zilla::Plugin::ContributorsFromGit
+
+    <http://p3rl.org/Pod::Weaver::Section::Contributors>
+
+AUTHOR
+    Yanick Champoux <yanick@cpan.org>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2013 by Yanick Champoux.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
