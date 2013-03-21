@@ -8,7 +8,8 @@ Revision history for Dist-Zilla-Plugin-ContributorsFile
  [DOCUMENTATION]
 
  [ENHANCEMENTS]
- - Clarify the message if ContributorsFromGit is not present.
+ - Clarify the message if ContributorsFromGit is not present. [GH#1] (reported
+   by Olaf Alders)
 
  [NEW FEATURES]
 
