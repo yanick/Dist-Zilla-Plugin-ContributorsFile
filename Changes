@@ -1,19 +1,12 @@
 Revision history for Dist-Zilla-Plugin-ContributorsFile
 
-{{$NEXT}}
- [API CHANGES]
-
- [BUG FIXES]
-
- [DOCUMENTATION]
-
+0.2.0 2013-03-20
  [ENHANCEMENTS]
- - Clarify the message if ContributorsFromGit is not present. [GH#1] (reported
-   by Olaf Alders)
-
- [NEW FEATURES]
+ - Clarify the message if ContributorsFromGit is not present. [GH#1]
+   (reported by Olaf Alders)
 
  [STATISTICS]
+ - code churn: 3 files changed, 26 insertions(+), 2 deletions(-)
 
 0.1.0 2013-03-18
  - First version, unleashed on an unsuspecting world.
