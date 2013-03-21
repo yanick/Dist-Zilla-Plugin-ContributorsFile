@@ -25,6 +25,13 @@ has contributors => (
     default => sub {
         my $self = shift;
 
+        if ( my $contrib_stash = $self->zilla->stash_named('%Contributors') ) {
+            return [
+                $self->zilla->stash_named('%Contributors')->all_contributors 
+            ];
+        }
+
+
         my ($p) = grep { ref $_ eq 'Dist::Zilla::Plugin::ContributorsFromGit' }  
             @{$self->zilla->plugins} or die <<'END';
 You need to have the plugin Dist::Zilla::Plugin::ContributorsFromGit in your 
