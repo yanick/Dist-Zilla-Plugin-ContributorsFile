@@ -70,7 +70,7 @@ sub prune_files {
 
     $self->log( 'no contributors, pruning file' );
 
-    for my $file ( grep { $_ eq $self->filename } @{ $self->zilla->files } ) {
+    for my $file ( grep { $_->name eq $self->filename } @{ $self->zilla->files } ) {
         $self->zilla->prune_file($file);
     }
 
