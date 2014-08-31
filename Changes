@@ -1,18 +1,11 @@
 Revision history for Dist-Zilla-Plugin-ContributorsFile
 
-{{$NEXT}}
- [API CHANGES]
-
+0.2.2 2014-08-31
  [BUG FIXES]
  - Gracefully deal with a total lack of contributors.
 
- [DOCUMENTATION]
-
- [ENHANCEMENTS]
-
- [NEW FEATURES]
-
  [STATISTICS]
+ - code churn: 2 files changed, 34 insertions(+), 13 deletions(-)
 
 0.2.1 2014-05-19
  [BUG FIXES]
