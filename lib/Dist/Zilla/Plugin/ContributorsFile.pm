@@ -26,7 +26,7 @@ has contributors => (
     lazy => 1, 
     default => sub {
         my $self = shift;
-        return $self->zilla->distmeta->{x_contributors};
+        return $self->zilla->distmeta->{x_contributors} || [];
     },
     handles => {
         has_contributors => 'count',
