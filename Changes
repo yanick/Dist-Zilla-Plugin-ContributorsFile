@@ -4,7 +4,6 @@ Revision history for Dist-Zilla-Plugin-ContributorsFile
  [API CHANGES]
 
  [BUG FIXES]
- - Forgot the 'die' debug statements. Aaaugh.
 
  [DOCUMENTATION]
 
@@ -13,6 +12,13 @@ Revision history for Dist-Zilla-Plugin-ContributorsFile
  [NEW FEATURES]
 
  [STATISTICS]
+
+0.2.3 2014-08-31
+ [BUG FIXES]
+ - Forgot the 'die' debug statements. Aaaugh.
+
+ [STATISTICS]
+ - code churn: 2 files changed, 8 insertions(+), 3 deletions(-)
 
 0.2.2 2014-08-31
  [BUG FIXES]
