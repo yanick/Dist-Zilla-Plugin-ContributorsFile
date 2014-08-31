@@ -4,7 +4,6 @@ Revision history for Dist-Zilla-Plugin-ContributorsFile
  [API CHANGES]
 
  [BUG FIXES]
- - Wrong file comparison. Aargh.
 
  [DOCUMENTATION]
 
@@ -13,6 +12,13 @@ Revision history for Dist-Zilla-Plugin-ContributorsFile
  [NEW FEATURES]
 
  [STATISTICS]
+
+0.2.4 2014-08-31
+ [BUG FIXES]
+ - Wrong file comparison. Aargh.
+
+ [STATISTICS]
+ - code churn: 2 files changed, 9 insertions(+), 2 deletions(-)
 
 0.2.3 2014-08-31
  [BUG FIXES]
