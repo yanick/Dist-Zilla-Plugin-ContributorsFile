@@ -37,11 +37,10 @@ has contributors => (
 sub munge_file {
     my( $self, $file ) = @_;
 
-    unless ( $self->has_contributors ) {
-        return $self->log( 'no contributor detected, skipping file' );
-    }
-
     return unless $file->name eq $self->filename;
+
+    return $self->log( 'no contributor detected, skipping file' )
+        unless $self->has_contributors;
 
     $file->content( $self->fill_in_string(
         $file->content, {
@@ -67,8 +66,16 @@ sub gather_files {
 sub prune_files {
     my $self = shift;
 
-    $self->zilla->prune_file( $self->filename )
-        unless $self->has_contributors;
+    return if $self->has_contributors;
+
+    $self->log( 'no contributors, pruning file' );
+
+    die ref $_ for @{ $self->zilla->files };
+    for my $file ( grep { $_ eq $self->filename } @{ $self->zilla->files } ) {
+        die ref $file;
+        $self->zilla->prune_file($file);
+    }
+
 }
 
 sub contributors_template {
