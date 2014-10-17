@@ -84,7 +84,7 @@ sub contributors_template {
 This is the (likely incomplete) list of people who have helped
 make this distribution what it is, either via code contributions, 
 patches, bug reports, help with troubleshooting, etc. A huge
-thank to all of them.
+thank you to all of them.
 
 {{ 
     for my $contributor ( @contributors ) {
@@ -127,7 +127,7 @@ The generated file will look like this:
     This is the (likely incomplete) list of people who have helped
     make this distribution what it is, either via code contributions, 
     patches, bug reports, help with troubleshooting, etc. A huge
-    thank to all of them.
+    thank you to all of them.
 
         * Albert Zoot <zoo@foo.com>
         * Bertrand Maxwell <maxwell@bar.com>
