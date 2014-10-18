@@ -160,4 +160,6 @@ directly, you can use empty git commits:
 
 L<Dist::Zilla::Plugin::ContributorsFromGit>
 
+L<Dist::Zilla::Plugin::Git::Contributors>
+
 L<Pod::Weaver::Section::Contributors>
