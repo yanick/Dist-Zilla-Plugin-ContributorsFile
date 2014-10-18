@@ -23,7 +23,7 @@ has filename => (
 has contributors => (
     traits => [ 'Array' ],
     isa => 'ArrayRef',
-    lazy => 1, 
+    lazy => 1,
     default => sub {
         my $self = shift;
         return $self->zilla->distmeta->{x_contributors} || [];
@@ -108,7 +108,7 @@ __END__
 In dist.ini:
 
     " any plugin populating x_contributors in the META files
-    [ContributorsFromGit]
+    [Git::Contributors]
 
     [ContributorsFile]
     filename = CONTRIBUTORS
@@ -116,9 +116,8 @@ In dist.ini:
 =head1 DESCRIPTION
 
 C<Dist::Zilla::Plugin::ContributorsFile> populates a I<CONTRIBUTORS> file
-with all the contributors of the project as found by
-C<Dist::Zilla::Plugin::ContributorsFromGit> (or any other plugin populating 
-the I<x_contributors> in the META files).
+with all the contributors of the project as found under the
+I<x_contributors> key in the META files.
 
 The generated file will look like this:
 
@@ -155,6 +154,11 @@ To give credit to bug reporters and other persons who don't commit code
 directly, you can use empty git commits:
 
     git commit --allow-empty --author="David Golden <dagolden@cpan.org>" -m "..."
+
+
+To populate the META file with the C<x_contributors>, you probably want to use
+either L<Dist::Zilla::Plugin::Git::Contributors> or
+L<Dist::Zilla::Plugin::ContributorsFromGit>.
 
 =head1 SEE ALSO
 
