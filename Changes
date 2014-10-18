@@ -1,18 +1,11 @@
 Revision history for Dist-Zilla-Plugin-ContributorsFile
 
-{{$NEXT}}
- [API CHANGES]
-
- [BUG FIXES]
-
+0.2.6 2014-10-18
  [DOCUMENTATION]
  - Improve the SEE ALSO section. (GH#3, Karen Etheridge)
 
- [ENHANCEMENTS]
-
- [NEW FEATURES]
-
  [STATISTICS]
+ - code churn: 2 files changed, 20 insertions(+), 7 deletions(-)
 
 0.2.5 2014-10-18
  [BUG FIXES]

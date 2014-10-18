@@ -1,6 +1,9 @@
 package Dist::Zilla::Plugin::ContributorsFile;
+BEGIN {
+  $Dist::Zilla::Plugin::ContributorsFile::AUTHORITY = 'cpan:YANICK';
+}
 # ABSTRACT: add a file listing all contributors
-
+$Dist::Zilla::Plugin::ContributorsFile::VERSION = '0.2.6';
 use strict;
 use warnings;
 
@@ -101,7 +104,18 @@ no Moose;
 1;
 
 __END__
+
 =pod
+
+=encoding UTF-8
+
+=head1 NAME
+
+Dist::Zilla::Plugin::ContributorsFile - add a file listing all contributors
+
+=head1 VERSION
+
+version 0.2.6
 
 =head1 SYNOPSIS
 
@@ -155,7 +169,6 @@ directly, you can use empty git commits:
 
     git commit --allow-empty --author="David Golden <dagolden@cpan.org>" -m "..."
 
-
 To populate the META file with the C<x_contributors>, you probably want to use
 either L<Dist::Zilla::Plugin::Git::Contributors> or
 L<Dist::Zilla::Plugin::ContributorsFromGit>.
@@ -167,3 +180,16 @@ L<Dist::Zilla::Plugin::ContributorsFromGit>
 L<Dist::Zilla::Plugin::Git::Contributors>
 
 L<Pod::Weaver::Section::Contributors>
+
+=head1 AUTHOR
+
+Yanick Champoux <yanick@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by Yanick Champoux.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
