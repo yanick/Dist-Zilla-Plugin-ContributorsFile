@@ -4,7 +4,6 @@ Revision history for Dist-Zilla-Plugin-ContributorsFile
  [API CHANGES]
 
  [BUG FIXES]
- - Improve wording. (GH#2, Olaf Alders)
 
  [DOCUMENTATION]
 
@@ -13,6 +12,13 @@ Revision history for Dist-Zilla-Plugin-ContributorsFile
  [NEW FEATURES]
 
  [STATISTICS]
+
+0.2.5 2014-10-18
+ [BUG FIXES]
+ - Improve wording. (GH#2, Olaf Alders)
+
+ [STATISTICS]
+ - code churn: 3 files changed, 12 insertions(+), 3 deletions(-)
 
 0.2.4 2014-08-31
  [BUG FIXES]
