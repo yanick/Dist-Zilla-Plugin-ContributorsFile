@@ -4,6 +4,7 @@ Revision history for Dist-Zilla-Plugin-ContributorsFile
  [API CHANGES]
 
  [BUG FIXES]
+ - Improve wording. (GH#2, Olaf Alders)
 
  [DOCUMENTATION]
 
