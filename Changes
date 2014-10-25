@@ -8,6 +8,8 @@ Revision history for Dist-Zilla-Plugin-ContributorsFile
  [DOCUMENTATION]
 
  [ENHANCEMENTS]
+ - Don't print out the emails in the CONTRIBUTORS file, as it seems
+    spammer harvest those. (GH#5)
 
  [NEW FEATURES]
 
